@@ -16,7 +16,8 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 10px 200px;
-
+    @media (min-width)
+    }
 }
 .logo{
     text-decoration: none;
@@ -192,4 +193,64 @@ font-size: 1.5em;
     color: #fff;
     display: flex;
     justify-content: space-between;
+    padding: 2em;
+}
+.fotter-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.footer-title span {
+    color: #3a6cfa;
+}
+.footer .social-icons a{
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+    .navigation a{
+        padding-left: 10px;
+    }
+    .title{
+        font-size: 1.8em
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .main-content h2{
+        font-size: 1em;
+
+    }
+    .main-content h3{
+        font-size: 1.6em;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+    .main-content h2{
+        font-size: 1.4em;
+    }
+}
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+    }
+}
+@media (min-width:1024px){
+        footer{
+            font-size: 12px;
+        }
+
+    body{
+        font-size: 15px;
+    }
 }
